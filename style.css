@@ -22,6 +22,7 @@ h2{
     background-color: rgba(125, 208, 228, 0.5);
     height: 100px;
     border-radius: 10px;
+    text-align: center;
 }
 
 .setting{

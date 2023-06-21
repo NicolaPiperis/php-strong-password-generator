@@ -9,13 +9,32 @@
     <link rel="stylesheet" href="style.css">
     <!-- TITLE -->
     <title>PASSWORD GENERATOR</title>
+        <?php
+            $passLength = $_GET["length"];
+            // var_dump($passLength);
+
+            $alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!£$%&=?';
+
+            $alphabetLength = strlen($alphabet) - 1; 
+            for ($i = 0; $i < $passLength; $i++) {
+                $n = rand(0, $alphabetLength);
+                $pass .= $alphabet[$n];
+            }
+            // var_dump($pass); 
+
+            // echo $pass;
+        ?>
 </head>
 <body>
 
     <h1>Strong password generator</h1>
     <h2>Genera una password sicura</h2>
 
-    <div class="container result"></div>
+    <div class="container result">
+         <?php
+                echo $pass;
+         ?>
+    </div>
 
     <div class="container setting">
 
@@ -78,20 +97,6 @@
                 <input type="submit" value="annulla" class="bg-danger p-3">
             </div>
 
-                    <?php
-                        $passLength = $_GET["length"];
-                        var_dump($passLength);
-
-                        $alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890';
-                        $pass = array(); 
-                        $alphabetLength = strlen($alphabet) - 1; 
-                        for ($i = 0; $i < $passLength; $i++) {
-                            $n = rand(0, $alphabetLength);
-                            $pass[] = $alphabet[$n];
-                        }
-                        var_dump($pass); 
-
-                    ?>
         </form>
 
 
