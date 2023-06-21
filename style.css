@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(1, 1, 63);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2{
+text-align: center;
+}
+
+h1{
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.176);
+    padding: 50px 0 25px 0;
+}
+
+h2{
+    font-size: 40px;
+    color: white;
+}
+
+.result{
+    background-color: rgba(125, 208, 228, 0.5);
+    height: 100px;
+    border-radius: 10px;
+}
+
+.setting{
+    background-color: white;
+    border-radius: 10px;
+    height: 600px;
+    margin-top: 30px;
+}
+
+input{
+    border-radius: 8px;
+    border: 1px solid black;
+    outline-style: none;
+    height: 50px;
+    
+}
+
+.php{
+    background-color: white;
+}
