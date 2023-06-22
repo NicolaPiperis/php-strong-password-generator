@@ -9,21 +9,11 @@
     <link rel="stylesheet" href="style.css">
     <!-- TITLE -->
     <title>PASSWORD GENERATOR</title>
+
         <?php
-            $passLength = $_GET["length"];
-            // var_dump($passLength);
-
-            $alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!£$%&=?';
-
-            $alphabetLength = strlen($alphabet) - 1; 
-            for ($i = 0; $i < $passLength; $i++) {
-                $n = rand(0, $alphabetLength);
-                $pass .= $alphabet[$n];
-            }
-            // var_dump($pass); 
-
-            // echo $pass;
+        include "functions.php";
         ?>
+
 </head>
 <body>
 
@@ -31,9 +21,11 @@
     <h2>Genera una password sicura</h2>
 
     <div class="container result">
-         <?php
-                echo $pass;
-         ?>
+        La password è :
+        <?php
+            echo $pass;
+        ?>
+        
     </div>
 
     <div class="container setting">

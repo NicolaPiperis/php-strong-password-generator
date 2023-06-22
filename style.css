@@ -23,6 +23,11 @@ h2{
     height: 100px;
     border-radius: 10px;
     text-align: center;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .setting{
